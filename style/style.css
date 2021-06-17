@@ -1,0 +1,45 @@
+/* reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* generals */
+
+.container{
+    height: calc(100vh - 100px);
+    width: 100vw;
+    background-color: #141922;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.container .row > .col{
+    height: 100%;
+}
+
+#sidebar{
+    width: 15%;
+    background-color: black;
+}
+
+#main{
+    width: 85%;
+}
+
+#header{
+    width: 100%;
+    height: 10%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.tools{
+    height: 100px;
+    background-color: #282828;
+}
