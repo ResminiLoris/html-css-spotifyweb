@@ -12,6 +12,30 @@ a{
 
 /* utility */
 
+.txt-small{
+    font-size: 12px;
+}
+
+.txt-grey{
+    color:gray;
+}
+
+.txt-right{
+    text-align: right;
+}
+
+.icon-big{
+    font-size: 35px;
+}
+
+.mr-10{
+    margin-right: 10px;
+}
+
+.mr-35{
+    margin-right: 35px;
+}
+
 .inline-block{
     display: inline-block;
 }
@@ -64,7 +88,7 @@ body{
 }
 
 #header{
-    width: calc(100vw - 200px);
+    width: calc(100vw - 250px);
     height: 100px;
     background-color: rgba(0, 0, 0, 0.5);
     position: fixed;
@@ -100,10 +124,19 @@ body{
     padding: 10px;
     padding-left: 20px;
     font-size: 15px;
-    width: 200px;
+    width: 250px;
     background-color: black;
     font-weight: 600;
 }
+
+.new:hover .hover-white{
+    color: white;
+}
+
+.nav-tool:hover .hover-white{
+    color: white;
+}
+
 
 .logo{
     height: 10%;
@@ -159,6 +192,15 @@ body{
     #header{
         width: calc(100vw - 50px);
     }
+
+    .tools #col-sx{
+        padding-top: 30px;
+        padding-left: 10px;
+    }
+
+    .tools #col-sx img{
+        width: 35px;
+    }
 }
 
 .nav-tool{
@@ -180,9 +222,23 @@ body{
     margin-right: 10px;
 }
 
+.playlists{
+    position: relative;
+}
+
 .playlists .list{
     height: 55%;
     overflow: auto;
+}
+
+.playlists .list .fade{
+    position: absolute; 
+    bottom: 0; 
+    left: 0;
+    width: 100%;
+    height: 35%; 
+    margin: 0;
+    background-image: linear-gradient(to bottom, transparent, black);
 }
 
 ::-webkit-scrollbar {
@@ -217,4 +273,79 @@ body{
 
 .user-name{
     font-weight: 700;
+}
+
+/* Tools */
+
+.col-small{
+    height: 100%;
+    width: 250px;
+}
+
+.col-big{
+    position: relative;
+    height: 100%;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    flex-grow: 6;
+}
+
+.col-big .buttons{
+    padding-top: 20px;
+}
+
+.col-big .fas,
+.col-big .far{
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+#col-sx{
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+#col-sx img{
+    width: 25%;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#col-dx{
+    color: white; 
+    line-height: 100px;   
+}
+
+#col-dx .volume-bar{
+    height: 5px;
+    width: 40%;
+    background-color: gray;
+    border-radius: 30px;
+    margin-left: 10px;
+}
+
+#col-dx .fas{
+    margin-left: 10px;
+}
+
+.track-info{
+    color: white;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.track-info .far:hover{
+    color: white;
+}
+
+#progress-bar{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+    width: 60%;
+    height: 5px;
+    border-radius: 50px;
+    background-color: grey;
 }

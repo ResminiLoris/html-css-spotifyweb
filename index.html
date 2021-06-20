@@ -25,26 +25,27 @@
                 <div class="sidebar-nav">
                     <!-- home -->
                     <div class="nav-tool">
-                        <i class="fas fa-home y-align"></i>
-                        <a href="#" class="sx-none y-align">Home</a>
+                        <i class="fas fa-home y-align hover-white"></i>
+                        <a href="#" class="sx-none y-align hover-white">Home</a>
                     </div>
                     <!-- cerca -->
                     <div class="nav-tool">
-                        <i class="fas fa-search y-align"></i>
-                        <a href="#" class="sx-none y-align">Cerca</a>
+                        <i class="fas fa-search y-align hover-white"></i>
+                        <a href="#" class="sx-none y-align hover-white">Cerca</a>
                     </div>
                     <div class="nav-tool">
-                        <i class="fas fa-book-open y-align"></i>
-                        <a href="#" class="sx-none y-align">Cerca</a>
+                        <i class="fas fa-book-open y-align hover-white"></i>
+                        <a href="#" class="sx-none y-align ">Cerca</a>
                     </div>
                 </div> 
                 <div class="playlists sx-none">
                     <div class="new">
                         <h3 class="clr-white mb-10">Playlist</h3>
-                        <i class="fas fa-plus-square y-align"></i>
-                        <h4 class="inline-block y-align">Crea Playlist</h4>
+                        <i class="fas fa-plus-square y-align hover-white"></i>
+                        <h4 class="inline-block y-align hover-white">Crea Playlist</h4>
                     </div>
                     <div class="list">
+                        <div class="fade"></div>
                         <div class="playlist-item"><a href="#">Nome Playlist</a></div>
                         <div class="playlist-item"><a href="#">Nome Playlist</a></div>
                         <div class="playlist-item"><a href="#">Nome Playlist</a></div>
@@ -61,9 +62,7 @@
                         <div class="playlist-item"><a href="#">Nome Playlist</a></div>
                         <div class="playlist-item"><a href="#">Nome Playlist</a></div>
                         <div class="playlist-item"><a href="#">Nome Playlist</a></div>
-                        <div class="playlist-item"><a href="#">Nome Playlist</a></div>
-                        
-                        
+                        <div class="playlist-item"><a href="#">Nome Playlist</a></div> 
                     </div>
                 </div> 
                 <!-- sidebar-footer -->
@@ -93,6 +92,35 @@
        </div>
    </div>
    <!-- tools -->
-   <section class="tools"></section> 
+   <section class="tools row">
+       <!-- tools/ sinistra -->
+       <div class="col-small" id="col-sx">
+           <img class="y-align" src="./img/sinister.jpeg" alt="cover-album">
+           <div class="track-info y-align">
+               <h5>sinister</h5>
+               <span class="txt-small txt-grey mr-35">Brano info</span>
+               <i class="far fa-heart txt-grey mr-10"></i>
+               <i class="far fa-folder txt-grey"></i>
+           </div>
+       </div>
+       <!-- tools/ centro -->
+       <div class="col-big">
+           <div class="buttons">
+               <i class="fas fa-random"></i>
+               <i class="fas fa-step-backward"></i>
+               <i class="far fa-play-circle icon-big"></i>
+               <i class="fas fa-step-forward"></i>
+               <i class="fas fa-redo-alt"></i>
+            </div>
+            <div id="progress-bar"></div>
+       </div>
+       <!-- tools/ destra -->
+       <div class="col-small" id="col-dx">
+        <i class="fas fa-list y-align"></i>
+        <i class="fas fa-desktop y-align"></i>
+        <i class="fas fa-volume-up y-align"></i>
+        <div class="volume-bar inline-block y-align"></div>
+       </div>
+   </section> 
 </body>
 </html>
