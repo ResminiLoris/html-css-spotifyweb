@@ -4,13 +4,80 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style/style.css">
     <title>Document</title>
 </head>
 <body>
+    <!-- container -->
    <div class="container">
        <div class="row">
-           <div id="sidebar" class="col"></div>
+           <!-- sidebar -->
+           <div id="sidebar" class="col">
+                <div class="logo">
+                    <img src="./img/logo.svg" alt="">
+                </div> 
+                <div class="sidebar-nav">
+                    <!-- home -->
+                    <div class="nav-tool">
+                        <i class="fas fa-home y-align"></i>
+                        <a href="#" class="y-align">Home</a>
+                    </div>
+                    <!-- cerca -->
+                    <div class="nav-tool">
+                        <i class="fas fa-search y-align"></i>
+                        <a href="#" class="y-align">Cerca</a>
+                    </div>
+                    <div class="nav-tool">
+                        <i class="fas fa-book-open y-align"></i>
+                        <a href="#" class="y-align">Cerca</a>
+                    </div>
+                </div> 
+                <div class="playlists">
+                    <div class="new">
+                        <h3 class="clr-white mb-10">Playlist</h3>
+                        <i class="fas fa-plus-square y-align"></i>
+                        <h4 class="inline-block y-align">Crea Playlist</h4>
+                    </div>
+                    <div class="list">
+                        <div class="playlist-item"><a href="#">Nome Playlist</a></div>
+                        <div class="playlist-item"><a href="#">Nome Playlist</a></div>
+                        <div class="playlist-item"><a href="#">Nome Playlist</a></div>
+                        <div class="playlist-item"><a href="#">Nome Playlist</a></div>
+                        <div class="playlist-item"><a href="#">Nome Playlist</a></div>
+                        <div class="playlist-item"><a href="#">Nome Playlist</a></div>
+                        <div class="playlist-item"><a href="#">Nome Playlist</a></div>
+                        <div class="playlist-item"><a href="#">Nome Playlist</a></div>
+                        <div class="playlist-item"><a href="#">Nome Playlist</a></div>
+                        <div class="playlist-item"><a href="#">Nome Playlist</a></div>
+                        <div class="playlist-item"><a href="#">Nome Playlist</a></div>
+                        <div class="playlist-item"><a href="#">Nome Playlist</a></div>
+                        <div class="playlist-item"><a href="#">Nome Playlist</a></div>
+                        <div class="playlist-item"><a href="#">Nome Playlist</a></div>
+                        <div class="playlist-item"><a href="#">Nome Playlist</a></div>
+                        <div class="playlist-item"><a href="#">Nome Playlist</a></div>
+                        <div class="playlist-item"><a href="#">Nome Playlist</a></div>
+                        
+                        
+                    </div>
+                </div> 
+                <!-- sidebar-footer -->
+                <section class="sidebar-footer">
+                    <!-- scarica l'app -->
+                    <div class="download mb-10">
+                        <i class="far fa-arrow-alt-circle-down"></i>
+                        <span>Scarica l'App</span>
+                    </div>
+                    <!-- user profile -->
+                    <div class="user">
+                        <i class="fas fa-user-circle y-align"></i>
+                        <span class="user-name y-align">Jhon Doe</span>
+                    </div>
+                </section>  
+           </div>
+           <!-- header/vetrina -->
            <div id="main" class="col">
                <div class="row">
                     <div id="header" class="col"></div>
@@ -19,6 +86,7 @@
            </div>
        </div>
    </div>
+   <!-- tools -->
    <section class="tools"></section> 
 </body>
 </html>

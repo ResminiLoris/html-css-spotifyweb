@@ -6,7 +6,37 @@
     box-sizing: border-box;
 }
 
+a{
+    text-decoration: none;
+}
+
+/* utility */
+
+.inline-block{
+    display: inline-block;
+}
+
+.y-align{
+    vertical-align: middle;
+}
+
+.clr-white{
+    color: white;
+}
+
+.clr-grey{
+    color:grey
+}
+
+.mb-10{
+    margin-bottom: 10px;
+}
+
 /* generals */
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
 
 .container{
     height: calc(100vh - 100px);
@@ -24,22 +54,116 @@
     height: 100%;
 }
 
-#sidebar{
-    width: 15%;
-    background-color: black;
+
+#sidebar > * {
+    margin-bottom: 20px;
 }
 
 #main{
-    width: 85%;
+    width: 8%;
 }
 
 #header{
     width: 100%;
     height: 10%;
     background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
 }
 
 .tools{
     height: 100px;
     background-color: #282828;
+}
+
+
+/* sidebar */
+
+#sidebar{
+    position: relative;
+    padding: 10px;
+    padding-left: 20px;
+    font-size: 15px;
+    width: 13%;
+    background-color: black;
+}
+
+.logo{
+    height: 10%;
+}
+
+.logo img{
+    max-width: 60%;
+    padding-top: 10px;
+}
+
+.sidebar-nav{
+    color: grey;
+    height: 15%;
+}
+
+#sidebar a{
+    color: grey;
+}
+
+#sidebar .sidebar-nav .fas{
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+.nav-tool{
+    margin-bottom: 20px;
+}
+
+.playlists{
+    height: 50%;
+}
+
+.playlists .new{
+    height: 25%;
+    color: grey;
+    padding-top: 10px;
+}
+
+.playlists .new .fas{
+    font-size: 45px;
+    margin-right: 10px;
+}
+
+.playlists .list{
+    height: 55%;
+    overflow: auto;
+}
+
+::-webkit-scrollbar {
+    width: 0px; 
+    background: transparent;
+}
+
+.playlist-item{
+    width: 100%;
+    height: 30px;
+    margin: 5px 0;
+    color: grey;
+}
+
+.sidebar-footer{
+    position: absolute;
+    bottom: 0;
+    color: honeydew;
+    width: 100%;
+}
+
+.download{
+    width: 70%;
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+}
+
+.user .fas{
+    font-size: 30px;
+    color: lightgray;
+}
+
+.user-name{
+    font-weight: 600;
 }
