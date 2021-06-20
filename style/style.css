@@ -64,13 +64,12 @@ body{
 }
 
 #header{
-    width: 100%;
+    width: calc(100vw - 200px);
     height: 100px;
     background-color: rgba(0, 0, 0, 0.5);
     position: fixed;
     line-height: 100px;
     text-align: right;
-    padding-right: 13%;
 }
 /* bottone UPGRADE */
 .btn-upgrade{
@@ -101,7 +100,7 @@ body{
     padding: 10px;
     padding-left: 20px;
     font-size: 15px;
-    width: 13%;
+    width: 200px;
     background-color: black;
     font-weight: 600;
 }
@@ -113,6 +112,10 @@ body{
 .logo img{
     max-width: 60%;
     padding-top: 10px;
+}
+
+.logo-sx{
+    display: none;
 }
 
 .sidebar-nav{
@@ -127,6 +130,35 @@ body{
 #sidebar .sidebar-nav .fas{
     font-size: 25px;
     margin-right: 10px;
+}
+
+@media screen and (max-width: 500px) {
+    #sidebar{
+        width: 50px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .sx-none{
+        display: none;
+    }
+
+    #sidebar .sidebar-nav .fas{
+        font-size: 30px;
+    }
+
+    .sidebar-footer .download{
+        font-size: 30px;
+        border-bottom: none;
+    }
+
+    .logo-sx{
+        display: block;
+    }
+
+    /* SPOSTARE IN SEZIONE HEADER/RESPONSIVE QUANDO LA FARO' */
+    #header{
+        width: calc(100vw - 50px);
+    }
 }
 
 .nav-tool{
