@@ -10,6 +10,10 @@ a{
     text-decoration: none;
 }
 
+ul{
+    list-style-type: none;
+}
+
 /* utility */
 
 .txt-small{
@@ -36,6 +40,7 @@ a{
     margin-right: 35px;
 }
 
+
 .inline-block{
     display: inline-block;
 }
@@ -54,6 +59,10 @@ a{
 
 .mb-10{
     margin-bottom: 10px;
+}
+
+.mb-40{
+    margin-bottom: 40px;
 }
 
 /* generals */
@@ -78,7 +87,6 @@ body{
     height: 100%;
 }
 
-
 #sidebar > * {
     margin-bottom: 20px;
 }
@@ -88,13 +96,14 @@ body{
 }
 
 #header{
-    width: calc(100vw - 250px);
+    width: calc(100vw - 220px);
     height: 100px;
     background-color: rgba(0, 0, 0, 0.5);
     position: fixed;
     line-height: 100px;
     text-align: right;
 }
+
 /* bottone UPGRADE */
 .btn-upgrade{
     color: white;
@@ -202,6 +211,12 @@ body{
     .tools #col-sx img{
         width: 35px;
     }
+
+    #vetrina .gallery li{
+        flex-basis: calc(100% / 2);
+        padding: 0 15px;
+    }
+    
 }
 
 .nav-tool{
@@ -349,4 +364,54 @@ body{
     height: 5px;
     border-radius: 50px;
     background-color: grey;
+}
+
+/* vetrina */
+
+#main{
+    width: 100%;
+}
+
+#vetrina{
+    padding: 150px 30px;
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.navigazione ul{
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.navigazione ul li{
+    display: inline-block;
+    font-size: 18px;
+    padding: 0 10px;
+    font-weight: 600;
+}
+
+#vetrina .gallery{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 0 -15px;
+}
+
+#vetrina .gallery li{
+    flex-basis: calc(100% / 6);
+    padding: 0 15px;
+}
+
+.album{
+    max-width: 100%;
+}
+
+@media screen and (max-width: 500px) {
+    
+    #vetrina .gallery li{
+        flex-basis: calc(100% / 2);
+        padding: 0 15px;
+    }
+    
 }
