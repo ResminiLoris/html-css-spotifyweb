@@ -65,6 +65,10 @@ ul{
     margin-bottom: 40px;
 }
 
+.mt-40{
+    margin-top: 40px;
+}
+
 /* generals */
 
 body{
@@ -373,9 +377,13 @@ body{
 }
 
 #vetrina{
-    padding: 150px 30px;
+    padding: 50px 30px;
     flex-grow: 1;
     overflow-y: auto;
+}
+
+.navigazione{
+    margin-top: 150px;
 }
 
 .navigazione ul{
@@ -395,7 +403,8 @@ body{
     align-items: center;
     flex-wrap: wrap;
     text-align: center;
-    margin: 0 -15px;
+    margin: 40px -15px;
+    margin-bottom: 40px;
 }
 
 #vetrina .gallery li{
@@ -407,11 +416,31 @@ body{
     max-width: 100%;
 }
 
+#artisti-popolari figure{
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 1200px) {
+    
+    #vetrina .gallery li{
+        flex-basis: calc(100% / 4);
+        padding: 0 15px;
+    }
+    
+}
+
 @media screen and (max-width: 500px) {
     
     #vetrina .gallery li{
         flex-basis: calc(100% / 2);
         padding: 0 15px;
     }
+
+    .col-big{
+        font-size: 20px;
+        flex-grow: 6;
+    }
+    
     
 }
